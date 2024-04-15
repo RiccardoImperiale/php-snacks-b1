@@ -16,7 +16,9 @@ $matches = [
     ["homeTeam" => "Squadra A", "guestTeam" => "Squadra B", "homeTeamScore" => 80, "guestTeamScore" => 75],
     ["homeTeam" => "Squadra C", "guestTeam" => "Squadra D", "homeTeamScore" => 90, "guestTeamScore" => 85],
 ];
-
+echo '<pre>';
+var_dump($matches);
+echo '</pre>';
 foreach ($matches as $match) {
     $homeTeam = $match['homeTeam'];
     $guestTeam = $match['guestTeam'];
