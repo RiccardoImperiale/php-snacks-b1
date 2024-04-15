@@ -11,27 +11,17 @@ Olimpia Milano - Cantù | 55-60
 
 */
 
-// $partiteBasket = [
-//     "squadraCasa" => [
-//         "puntiCasa" => 80, 
-//         "puntiOspite" => 75
-//     ],
-//     "squadraOspite" => [
-//         "puntiCasa" => 80, 
-//         "puntiOspite" => 75
-//     ],
-// ];
 
-$partiteBasket = [
-    ["squadraCasa" => "Squadra A", "squadraOspite" => "Squadra B", "puntiCasa" => 80, "puntiOspite" => 75],
-    ["squadraCasa" => "Squadra B", "squadraOspite" => "Squadra D", "puntiCasa" => 90, "puntiOspite" => 85],
+$matches = [
+    ["homeTeam" => "Squadra A", "guestTeam" => "Squadra B", "homeTeamScore" => 80, "guestTeamScore" => 75],
+    ["homeTeam" => "Squadra C", "guestTeam" => "Squadra D", "homeTeamScore" => 90, "guestTeamScore" => 85],
 ];
 
-foreach ($partiteBasket as $partita) {
-    $squadraCasa = $partita['squadraCasa'];
-    $squadraOspite = $partita['squadraOspite'];
-    $puntiCasa = $partita['puntiCasa'];
-    $puntiOspite = $partita['puntiOspite'];
+foreach ($matches as $match) {
+    $homeTeam = $match['homeTeam'];
+    $guestTeam = $match['guestTeam'];
+    $homeTeamScore = $match['homeTeamScore'];
+    $guestTeamScore = $match['guestTeamScore'];
 
-    echo "$squadraCasa - $squadraOspite | $puntiCasa-$puntiOspite<br>";
+    echo "$homeTeam - $guestTeam | $homeTeamScore-$guestTeamScore<br>";
 }
